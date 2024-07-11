@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Singh Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            padding: 0 20px;
+        }
+        nav ul {
+            display: flex;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+        }
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            transition: color 0.3s ease;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px;
+            text-align: left;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            margin-bottom: 20px;
+            animation: fadeInRight 1s ease-in-out;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+        .header p {
+            font-size: 1.2rem;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        section p, section ol {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .project, .experience {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .project a, .contact a {
+            color: rgb(170, 107, 228);
+            text-decoration: none;
+        }
+        .project a:hover, .contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #0e0e1a;
+            padding: 20px;
+            text-align: center;
+        }
+        .leftSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 3rem;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+        .leftSection p{
+            font-size: 3rem;
+        }
+        .leftSection .purple {
+            color: rgb(170, 107, 228);
+        }
+        .rightSection {
+            animation: fadeInRight 1s ease-in-out;
+        }
+        .rightSection img {
+            width: 300px;
+            height: 300px;
+            border-radius: 30%;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Aditya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="header">
+            <div class="leftSection">
+                <h1>Hi, My name is <span class="purple">Aditya Singh</span></h1>
+                <p>and I am a passionate</p>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="/Aditya resume.jpeg" alt="Aditya Singh">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="profile">
+            <h1>Profile</h1>
+            <p>Motivated pre-final B.Tech(IT) student from VIT, Vellore, with a strong passion for frontend web development. Proficient in HTML, CSS, and JavaScript, eager to contribute creative solutions within dynamic teams. Quick learner, adaptable to new technologies, committed to continuous growth, and making meaningful contributions to innovative projects.</p>
+        </section>
+        <section id="education">
+            <h1>Education</h1>
+            <ol>
+                <li><strong>Bachelors of Technology (Information Technology)</strong>, Vellore Institute of Technology, Vellore (September 2021 - July 2025) - CGPA: 8.4</li>
+                <li><strong>Senior Secondary Central Education</strong>, The Aditya Birla Public School, Renukoot (April 2018 - May 2019) - 93.2%</li>
+                <li><strong>Higher Secondary Central Education</strong>, The Aditya Birla Public School, Renukoot (April 2020 - May 2023) - 92.6%</li>
+            </ol>
+        </section>
+        <section id="experience">
+            <h1>Experience</h1>
+            <div class="experience">
+                <h3>Project Intern (27 May 2024 - 8 July 2024)</h3>
+                <p>Worked in "Photon Interactive Private" on a project named "BJs Wholesale" in which I worked as a Frontend Developer and used React Native for Development. The Project basically is an app in which online shopping can be performed.</p>
+            </div>
+        </section>
+        <section id="skills">
+            <h1>Skills</h1>
+            <ol>
+                <li>Microsoft Office</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>BOOTSTRAP</li>
+                <li>ReactNative</li>
+            </ol>
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="project">
+                <h3>Car Rental Site</h3>
+                <p>Crafting a visually appealing and intuitive interface that seamlessly integrates car listings, reservation forms, and user profiles. Utilizing HTML, CSS, and JavaScript to ensure responsive design and smooth user experience, enhancing accessibility and facilitating effortless navigation for customers seeking rental services.</p>
+                <a href="https://car-rentaladi.netlify.app/" target="_blank">Visit Project</a>
+            </div>
+        </section>
+        <section id="certifications">
+            <h1>Certifications</h1>
+            <ol>
+                <li><strong>Skolar DS Algo and Competitive Coding</strong> (July 2022)</li>
+                <li><strong>Skolar Full Stack Web Development</strong> (March 2023)</li>
+                <li><strong>AWS Certified Cloud Practitioner</strong> (December 2023 - December 2026)</li>
+                <li><strong>Google Cloud Certified Cloud Digital Leader</strong> (December 2023 - December 2026)</li>
+            </ol>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Email: <a href="mailto:singha/965@gmail.com">singha/965@gmail.com</a></p>
+            <p>Phone: +91 9919379979</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/aditya-singh-8a1953235" target="_blank">Aditya Singh</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 All rights reserved by Aditya Singh</p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</html>
